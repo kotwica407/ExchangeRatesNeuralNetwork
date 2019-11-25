@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Deedle" Version="2.1.0" />
+    <PackageReference Include="ServiceStack.Text" Version="5.7.0" />
+    <PackageReference Include="SiaNet" Version="0.4.2.67" />
+    <PackageReference Include="SiaNet.Backend.ArrayFire" Version="0.4.2.67" />
+    <PackageReference Include="SiaNet.Engine" Version="0.4.2.67" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExchangeRateApiClient\ExchangeRateApiClient.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+</Project>
