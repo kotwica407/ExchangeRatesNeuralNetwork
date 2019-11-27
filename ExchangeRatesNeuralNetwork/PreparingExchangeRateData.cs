@@ -60,12 +60,12 @@ namespace ExchangeRatesNeuralNetwork
                 while ((line = readFile.ReadLine()) != null)
                 {
                     row = line.Split('\t');
-                    for (int i = 1; i < row.Length; i++)
+                    for (int i = 1; i < row.Length - 1; i++)
                         datas.Add(float.Parse(row[i]));
                 }
             }
             //var data = frame.ToArray2D<float>().Cast<float>().ToArray();
-            DataFrame2D df = new DataFrame2D(8);
+            DataFrame2D df = new DataFrame2D(7);
             df.Load(datas.ToArray());
             return df;
         }
